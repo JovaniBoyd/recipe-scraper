@@ -1,0 +1,5 @@
+com\recipescraper\scrapers\FoodNetworkScraper.class
+com\recipescraper\util\SearchEngineHelper.class
+com\recipescraper\scrapers\GenericRecipeScraper.class
+com\recipescraper\scrapers\NYTCookingScraper.class
+com\recipescraper\scrapers\EatingWellScraper.class

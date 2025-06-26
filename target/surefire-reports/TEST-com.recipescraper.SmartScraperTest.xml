@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.recipescraper.SmartScraperTest" time="12.596" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\jovan\OneDrive\Documents\webscraperR\target\test-classes;C:\Users\jovan\OneDrive\Documents\webscraperR\target\classes;C:\Users\jovan\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\jovan\.m2\repository\org\jsoup\jsoup\1.17.2\jsoup-1.17.2.jar;C:\Users\jovan\.m2\repository\org\xerial\sqlite-jdbc\3.36.0.3\sqlite-jdbc-3.36.0.3.jar;C:\Users\jovan\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\jovan\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\jovan\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\jovan\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\jovan\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\jovan\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\jovan\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\jovan\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\jovan\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\jovan\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\jovan\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\jovan\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\jovan\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\jovan\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\jovan\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\jovan\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\jovan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\jovan\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\jovan\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\jovan\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\jovan\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\jovan\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\jovan\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Denver"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\jovan\AppData\Local\Temp\surefire16897375005509450411\surefirebooter-20250624155241668_3.jar C:\Users\jovan\AppData\Local\Temp\surefire16897375005509450411 2025-06-24T15-52-41_472-jvmRun1 surefire-20250624155241668_1tmp surefire_0-20250624155241668_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\jovan\OneDrive\Documents\webscraperR\target\test-classes;C:\Users\jovan\OneDrive\Documents\webscraperR\target\classes;C:\Users\jovan\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\jovan\.m2\repository\org\jsoup\jsoup\1.17.2\jsoup-1.17.2.jar;C:\Users\jovan\.m2\repository\org\xerial\sqlite-jdbc\3.36.0.3\sqlite-jdbc-3.36.0.3.jar;C:\Users\jovan\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.3\jackson-databind-2.15.3.jar;C:\Users\jovan\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.3\jackson-annotations-2.15.3.jar;C:\Users\jovan\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.3\jackson-core-2.15.3.jar;C:\Users\jovan\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-java\4.21.0\selenium-java-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-api\4.21.0\selenium-api-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.21.0\selenium-chrome-driver-4.21.0.jar;C:\Users\jovan\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.21.0\selenium-chromium-driver-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-json\4.21.0\selenium-json-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.21.0\selenium-manager-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v123\4.21.0\selenium-devtools-v123-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.21.0\selenium-devtools-v124-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.21.0\selenium-devtools-v125-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.21.0\selenium-devtools-v85-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.21.0\selenium-edge-driver-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.21.0\selenium-firefox-driver-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-http\4.21.0\selenium-http-4.21.0.jar;C:\Users\jovan\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.21.0\selenium-ie-driver-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.21.0\selenium-remote-driver-4.21.0.jar;C:\Users\jovan\.m2\repository\com\google\guava\guava\33.2.0-jre\guava-33.2.0-jre.jar;C:\Users\jovan\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\jovan\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\jovan\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\jovan\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\jovan\.m2\repository\com\google\errorprone\error_prone_annotations\2.26.1\error_prone_annotations-2.26.1.jar;C:\Users\jovan\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-api\1.38.0\opentelemetry-api-1.38.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-context\1.38.0\opentelemetry-context-1.38.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.38.0\opentelemetry-exporter-logging-1.38.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.38.0\opentelemetry-sdk-common-1.38.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.38.0\opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.38.0\opentelemetry-sdk-extension-autoconfigure-1.38.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.38.0-alpha\opentelemetry-api-incubator-1.38.0-alpha.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.38.0\opentelemetry-sdk-trace-1.38.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.38.0\opentelemetry-sdk-1.38.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.38.0\opentelemetry-sdk-metrics-1.38.0.jar;C:\Users\jovan\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.38.0\opentelemetry-sdk-logs-1.38.0.jar;C:\Users\jovan\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-os\4.21.0\selenium-os-4.21.0.jar;C:\Users\jovan\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.21.0\selenium-safari-driver-4.21.0.jar;C:\Users\jovan\.m2\repository\org\seleniumhq\selenium\selenium-support\4.21.0\selenium-support-4.21.0.jar;C:\Users\jovan\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.0\junit-jupiter-5.10.0.jar;C:\Users\jovan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.0\junit-jupiter-api-5.10.0.jar;C:\Users\jovan\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\jovan\.m2\repository\org\junit\platform\junit-platform-commons\1.10.0\junit-platform-commons-1.10.0.jar;C:\Users\jovan\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\jovan\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.0\junit-jupiter-params-5.10.0.jar;C:\Users\jovan\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.0\junit-jupiter-engine-5.10.0.jar;C:\Users\jovan\.m2\repository\org\junit\platform\junit-platform-engine\1.10.0\junit-platform-engine-1.10.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\jovan"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-10-17"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\jovan\OneDrive\Documents\webscraperR"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\jovan\AppData\Local\Temp\surefire16897375005509450411\surefirebooter-20250624155241668_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.1+12-LTS"/>
+    <property name="user.name" value="jovan"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="sun.net.http.allowRestrictedHeaders" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.1+12"/>
+    <property name="localRepository" value="C:\Users\jovan\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\jovan\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.1"/>
+    <property name="user.dir" value="C:\Users\jovan\OneDrive\Documents\webscraperR"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Zulu\zulu-21\bin\;C:\Program Files\Eclipse Adoptium\jdk-21.0.1.12-hotspot\bin;C:\Program Files\Java\jdk-20\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.17.8-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Pololu\Maestro\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Oculus\Support\oculus-runtime;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Common Files\Autodesk Shared\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\PuTTY\;C:\Program Files\nodejs\;C:\ngrok;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.10\bin;C:\Users\jovan\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\jovan\AppData\Local\Programs\Python\Python312\;C:\Users\jovan\AppData\Local\Programs\Python\Launcher\;C:\Users\jovan\AppData\Local\Microsoft\WindowsApps;C:\Users\jovan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\jovan\AppData\Roaming\npm;C:\ghcup\bin;C:\MinGW\bin;C:\Windows\SysWOW64;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.1+12-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testSearchRecipesResturnsResults" classname="com.recipescraper.SmartScraperTest" time="12.594">
+    <system-out><![CDATA[Searching for recipes with ingredients: [chicken, rice]
+MinistryOfCurry: searching for 'chicken rice'
+SeriousEats sitemap: 1000 links
+→ Trying: https://www.seriouseats.com/grilled-chicken-recipes-11758921
+  ✔ Ingredients found: 0
+  ✔ Instructions found: 0
+  ✘ Skipping due to too few ingredients or instructions
+→ Trying: https://www.seriouseats.com/lemon-butter-chicken-paillard-recipe-11756564
+BBCGF: found 33 candidate recipes
+  ? Trying: https://www.bbcgoodfood.com/recipes/fajita-chicken-rice-bowl-with-burnt-lime
+  ✔ Ingredients found: 14
+  ✔ Instructions found: 6
+→ Trying: https://www.seriouseats.com/best-grocery-store-chicken-11756547
+  ✔ Ingredients found: 11
+  ✔ Instructions found: 2
+  ? Trying: https://www.bbcgoodfood.com/recipes/one-pot-chicken-rice
+  ✔ Ingredients found: 0
+  ✔ Instructions found: 0
+  ✘ Skipping due to too few ingredients or instructions
+→ Trying: https://www.seriouseats.com/best-rich-easy-white-chicken-stock-recipe
+  ✔ Ingredients found: 11
+  ✔ Instructions found: 3
+  ? Trying: https://www.bbcgoodfood.com/recipes/spring-onion-ginger-crispy-chicken-rice-pot
+  ✔ Ingredients found: 8
+  ✔ Instructions found: 1
+  ✘ Skipping due to too few ingredients or instructions
+→ Trying: https://www.seriouseats.com/should-you-buy-a-food-mill-or-a-ricer-it-depends
+  ✔ Ingredients found: 9
+  ✔ Instructions found: 3
+  ? Trying: https://www.bbcgoodfood.com/recipes/oven-baked-thai-chicken-rice
+→ RecipeTinEats: found 20 recipe cards
+→ Trying: https://www.recipetineats.com/emergency-chicken-rice-casserole/
+  ✔ Ingredients found: 0
+  ✔ Instructions found: 0
+  ✘ Skipping due to too few ingredients or instructions
+→ Trying: https://www.seriouseats.com/sheet-pan-fried-rice-11754583
+  ✔ Ingredients found: 9
+  ✔ Instructions found: 2
+  ? Trying: https://www.bbcgoodfood.com/recipes/satay-chicken-rice-bowl
+  ✔ Ingredients found: 10
+  ✔ Instructions found: 3
+  ? Trying: https://www.bbcgoodfood.com/recipes/creamy-curried-chicken-rice-soup
+  ✔ Ingredients found: 12
+  ✔ Instructions found: 6
+→ Trying: https://www.seriouseats.com/overcooking-chicken-thigh-technique-tips-11754139
+  ✔ Ingredients found: 11
+  ✔ Instructions found: 2
+->BBCGoodFoodScraper gave 6 recipes
+  ✔ Ingredients found: 0
+  ✔ Instructions found: 0
+  ✘ Skipping due to too few ingredients or instructions
+→ Trying: https://www.seriouseats.com/honey-mustard-pretzel-chicken-tender-recipe-11712848
+  → Ingredients found: 16
+  → Instructions found: 13
+→ Trying: https://www.recipetineats.com/ginger-chicken-and-rice/
+  ✔ Ingredients found: 9
+  ✔ Instructions found: 9
+→ Trying: https://www.seriouseats.com/harissa-and-honey-glazed-grilled-chicken-skewers-recipe-11748218
+  → Ingredients found: 15
+  → Instructions found: 8
+→ Trying: https://www.recipetineats.com/one-pot-mexican-chicken-rice/
+  ✔ Ingredients found: 10
+  ✔ Instructions found: 7
+→ Trying: https://www.seriouseats.com/easy-sheet-pan-chicken-asparagus-olive-yogurt-recipe-11746843
+  → Ingredients found: 20
+  → Instructions found: 12
+→ Trying: https://www.recipetineats.com/magic-baked-chicken-fried-rice/
+  ✔ Ingredients found: 10
+  ✔ Instructions found: 5
+→ Trying: https://www.seriouseats.com/spicy-chicken-recipes-8696693
+  → Ingredients found: 0
+  → Instructions found: 0
+→ Trying: https://www.recipetineats.com/oven-baked-chicken-and-rice/
+  ✔ Ingredients found: 0
+  ✔ Instructions found: 0
+  ✘ Skipping due to too few ingredients or instructions
+→ Trying: https://www.seriouseats.com/okinawan-taco-rice-recipe-11740889
+  → Ingredients found: 15
+  → Instructions found: 8
+→ Trying: https://www.recipetineats.com/chicken-fried-rice/
+  ✔ Ingredients found: 23
+  ✔ Instructions found: 4
+->SeriousEatsScraper gave 6 recipes
+  → Ingredients found: 16
+  → Instructions found: 9
+→ Trying: https://www.recipetineats.com/one-pot-chicken-broccoli-rice-casserole/
+Checking recipe: Vermicelli Sheera {Sweet Seviyan}
+Ingredients:
+ - ▢ 1 cup vermicelli use fine, broken into smaller pieces
+ - ▢ ¾ cup sugar
+ - ▢ 1 tablespoon ghee
+ - ▢ 5 almonds sliced
+ - ▢ 5 pistachios chopped
+ - ▢ 1 tablespoon raisins
+ - ▢ 1 teaspoon vanilla essence
+Query words: [chicken, rice]
+Recipe 'Vermicelli Sheera {Sweet Seviyan}' rejected: no query word found.
+Checking recipe: Saranachi Puri {fried flatbread with sweet stuffing}
+Ingredients:
+ - ▢ 1.5 cups fine rava/semolina
+ - ▢ 1.5 cups maida/all purpose flour
+ - ▢ 1 teaspoon salt
+ - ▢ 2 pinches saffron
+ - ▢ 2 tablespoons ghee
+ - ▢ 1 cup milk warm
+ - ▢ 3 cups rava/semolina
+ - ▢ 2 tablespoons ghee
+ - ▢ 2 tablespoons besan/chickpea flour
+ - ▢ 2.5 cup jaggery grated
+ - ▢ 1 cup milk warm
+ - ▢ 1 teaspoon cardamom powder
+ - ▢ ½ teaspoon nutmeg powder
+ - ▢ 2 pinches saffron
+ - ▢ 2 tablespoons almonds ground fine (optional)
+ - ▢ 2 tablespoons cashews ground fine (optional)
+ - ▢ 1-2 cups ghee or oil
+Query words: [chicken, rice]
+Recipe 'Saranachi Puri {fried flatbread with sweet stuffing}' rejected: no query word found.
+Checking recipe: Instant Pot Bisi Bele Bhath
+Ingredients:
+ - ▢ 1 cup rice
+ - ▢ ¾ cup toor daal yellow pigeon peas
+ - ▢ 1 cup cauliflower florets cut into 1 inch florets
+ - ▢ 1 red potato cubed ½ inch
+ - ▢ 10 pieces drumsticks optional
+ - ▢ ½ cup green beans cut into 1 inch pieces
+ - ▢ 2 carrots peeled and sliced
+ - ▢ ½ green pepper cut into ½ inch pieces
+ - ▢ 10 curry leaves optional
+ - ▢ ¼ cup cilantro chopped for garnish
+ - ▢ 1 tablespoon tamarind paste optional, more or less depending on how tangy it is
+ - ▢ 2 tablespoons ghee coconut oil or any cooking oil for Vegan
+ - ▢ ½ teaspoon mustard seeds
+ - ▢ ⅛ teaspoon asafetida powder
+ - ▢ ½ teaspoon ground turmeric
+ - ▢ salt to taste
+ - ▢ 4 dried red chilies I use mild Kashmiri chilies
+ - ▢ 1 tablespoon coriander seeds
+ - ▢ ½ teaspoon fenugreek seeds
+ - ▢ 1 tablespoon chana dal
+ - ▢ 1 tablespoon shredded coconut dried or fresh
+Query words: [chicken, rice]
+  → Ingredients found: 14
+  → Instructions found: 8
+->RecipeTinEatsScraper gave 6 recipes
+Checking recipe: Pomfret Fish Fry | Pan-fried Pompano |
+Ingredients:
+ - ▢ 1 large Pompano / Pomfret cut into 1 inch steaks
+ - ▢ 1 tablespoon lime juice
+ - ▢ ½ tablespoon ginger grated
+ - ▢ ½ tablespoon garlic grated
+ - ▢ ½ tablespoon red chili powder medium hot
+ - ▢ ¼ teaspoon garam masala
+ - ▢ ¼ teaspoon turmeric
+ - ▢ ½ cup rice flour
+ - ▢ 1 tablespoon oil
+ - ▢ 1 teaspoon kosher salt
+Query words: [chicken, rice]
+Checking recipe: Cauliflower Rice Chicken Biryani
+Ingredients:
+ - ▢ 1½ pounds chicken breasts or thighs cut into 2 inch pieces
+ - ▢ 1 teaspoon garam masala
+ - ▢ 1 teaspoon ginger
+ - ▢ 1 teaspoon garlic
+ - ▢ 2 teaspoons Kashmiri red chili powder
+ - ▢ ½ teaspoon ground turmeric
+ - ▢ ¼ cup fresh mint
+ - ▢ ¼ cup fresh cilantro
+ - ▢ 1 tablespoon lemon juice
+ - ▢ 2 tablespoons yogurt
+ - ▢ 1½ teaspoons kosher salt
+ - ▢ ¼ cup ghee
+ - ▢ 1 large yellow onion thinly sliced
+ - ▢ 1 teaspoon shah jeera regular cumin seed also works
+ - ▢ 1 Indian bay leaf
+ - ▢ 6 cups riced cauliflower
+ - ▢ 1 teaspoon kosher salt
+ - ▢ 1 pinch saffron optional
+ - ▢ 1 tablespoon warm milk optional
+Query words: [chicken, rice]
+Checking recipe: Homemade Berbere Spice Blend
+Ingredients:
+ - ▢ 2 tablespoons cayenne pepper
+ - ▢ 5 teaspoons paprika
+ - ▢ 1 teaspoon whole coriander
+ - ▢ 1 teaspoon fenugreek seeds
+ - ▢ 1 teaspoon ground ginger
+ - ▢ 1 teaspoon ground cardamom
+ - ▢ ¼ teaspoon ground nutmeg
+ - ▢ ¼ teaspoon ground allspice
+ - ▢ ¼ teaspoon ground cloves
+Query words: [chicken, rice]
+Recipe 'Homemade Berbere Spice Blend' rejected: no query word found.
+Checking recipe: Instant Pot Tandoori Salmon
+Ingredients:
+ - ▢ 1½ pounds salmon boneless fillets, about 1 inch thick
+ - ▢ 1 tablespoon ginger grated
+ - ▢ 1 tablespoon garlic pressed
+ - ▢ 1 teaspoon garam masala
+ - ▢ ½ to 1 tablespoon red chili powder Kashmiri or any mild variety
+ - ▢ ½ teaspoon ground turmeric
+ - ▢ 1 tablespoon lemon juice
+ - ▢ 1 tablespoon oil
+ - ▢ 1 teaspoon kosher salt
+Query words: [chicken, rice]
+Recipe 'Instant Pot Tandoori Salmon' rejected: no query word found.
+Checking recipe: Instant Pot Baingan Bharta
+Ingredients:
+ - ▢ 1½ LB eggplants 2 medium
+ - ▢ 4 tablespoon oil
+ - ▢ ¼ teaspoon cumin seeds
+ - ▢ 1 large onion finely diced
+ - ▢ 6 garlic cloves minced
+ - ▢ 1 teaspoon green chilies minced
+ - ▢ 12-15 curry leaves optional, fresh or dried
+ - ▢ ½ teaspoon turmeric
+ - ▢ 2 tomatoes diced and divided
+ - ▢ 1 teaspoon salt
+ - ▢ ¼ cup scallions chopped
+ - ▢ ¼ cup cilantro chopped
+Query words: [chicken, rice]
+Recipe 'Instant Pot Baingan Bharta' rejected: no query word found.
+Checking recipe: Vegetarian Taco Pasta
+Ingredients:
+ - ▢ 1 tablespoon oil
+ - ▢ 1 large yellow onion diced
+ - ▢ 1 jalapeño diced
+ - ▢ 1 can black beans rinsed and drained
+ - ▢ 1 cup mushrooms diced
+ - ▢ ½ cup red peppers diced
+ - ▢ 1 cup fresh or frozen corn optional
+ - ▢ 1 pound pasta shells
+ - ▢ 2 tablespoons taco seasoning mix ** love trader joes or Primal Palate
+ - ▢ 2 cups salsa
+ - ▢ 4 cups low sodium vegetable broth
+ - ▢ ½ cup cilantro chopped
+ - ▢ 1 cup pepper jack cheese grated
+ - ▢ 1 avocado diced optional
+Query words: [chicken, rice]
+Recipe 'Vegetarian Taco Pasta' rejected: no query word found.
+Checking recipe: Narali Bhath | Sweet Coconut Rice
+Ingredients:
+ - ▢ 1 pinch saffron
+ - ▢ 1 tablespoon milk
+ - ▢ 2 tablespoons cashews
+ - ▢ 2 tablespoons ghee
+ - ▢ 1 cup rice
+ - ▢ 4 cloves
+ - ▢ 2 cardamoms
+ - ▢ ½ teaspoon kosher salt
+ - ▢ 2 cups water
+ - ▢ 1 cup sugar
+ - ▢ 1 cup grated coconut
+ - ▢ 1 teaspoon cardamom powder
+ - ▢ 2 tablespoons raisins
+Query words: [chicken, rice]
+Checking recipe: Instant Pot Bhogichi Bhaji | Mixed Vegetable Curry
+Ingredients:
+ - ▢ 1 tablespoon dry unsweetened coconut roasted
+ - ▢ 1 tablespoon peanuts roasted
+ - ▢ 1 tablespoon brown sesame seeds roasted
+ - ▢ ½ tablespoon ginger grated
+ - ▢ 6 garlic cloves minced
+ - ▢ ¼ cup water
+ - ▢ 1 tablespoon oil
+ - ▢ ¼ cup water
+ - ▢ ½ teaspoon ground turmeric
+ - ▢ ½ tablespoon ground cumin
+ - ▢ ½ tablespoon ground coriander
+ - ▢ 1 tablespoon Kashmiri red chili powder
+ - ▢ ½ cup fresh green chickpeas removed from the pods
+ - ▢ 1 cup flat green beans cut into 1 inch pieces
+ - ▢ 6 baby eggplant cut into quarters
+ - ▢ 1 tomato diced
+ - ▢ 2 carrots peeled and sliced
+ - ▢ 1½ teaspoon kosher salt
+ - ▢ ¼ cup cilantro finely chopped
+Query words: [chicken, rice]
+Recipe 'Instant Pot Bhogichi Bhaji | Mixed Vegetable Curry' rejected: no query word found.
+Checking recipe: Instant Pot Tandoori Chicken
+Ingredients:
+ - ▢ 2 LB 8 Chicken drumsticks, skinned
+ - ▢ ½ cup plain yogurt Make It Dairy Free by using Coconut yogurt
+ - ▢ ½ tablespoon ginger grated
+ - ▢ ½ tablespoon garlic minced
+ - ▢ 1-2 tablespoon Kashmiri red chili powder or any mild red chili powder
+ - ▢ ½ teaspoon turmeric
+ - ▢ 1-2 teaspoon garam masala
+ - ▢ 2 teaspoon salt
+ - ▢ 1 tablespoon lemon juice
+ - ▢ 1 tablespoon oil
+Query words: [chicken, rice]
+Checking recipe: Pakatali Puri
+Ingredients:
+ - ▢ ½ cup sooji rava
+ - ▢ ½ cup all purpose flour maida
+ - ▢ 2 tablespoons plain yogurt
+ - ▢ 1 tablespoon hot ghee for dough
+ - ▢ ¾ cup ghee for frying **
+ - ▢ 1 cup sugar
+ - ▢ ½ cup water
+ - ▢ 1 tablespoon lemon juice
+ - ▢ 1 pinch saffron
+Query words: [chicken, rice]
+Recipe 'Pakatali Puri' rejected: no query word found.
+Checking recipe: Instant Pot French Onion Soup - Vegetarian Recipe
+Ingredients:
+ - ▢ 4 large yellow onions thinly sliced (use mandolin for thin slices)
+ - ▢ 3 tablespoons butter
+ - ▢ 1 tablespoon oil
+ - ▢ 1 teaspoon kosher salt
+ - ▢ ¼ teaspoon sugar
+ - ▢ ½ cup dry white wine Pinot Grigio, Sauvignon Blanc, or Chardonnay
+ - ▢ 1 tablespoon Worcestershire sauce/ Vegan Worcestershire sauce
+ - ▢ 1 Indian bay leaf
+ - ▢ 1 tablespoon fresh thyme
+ - ▢ ½ teaspoon freshly ground black pepper
+ - ▢ 3 cups low sodium vegetable broth divided
+ - ▢ 2 tablespoons all purpose flour
+ - ▢ 1 crusty baguette thick slices
+ - ▢ 1½ cups shredded gruyere cheese
+ - ▢ 6 to 12 slices swiss cheese
+ - ▢ 1 teaspoon cayenne pepper optional
+Query words: [chicken, rice]
+Recipe 'Instant Pot French Onion Soup - Vegetarian Recipe' rejected: no query word found.
+Checking recipe: Essential Indian Cooking Tools
+Ingredients:
+Query words: [chicken, rice]
+Recipe 'Essential Indian Cooking Tools' rejected: no query word found.
+Checking recipe: Instant Pot Basics: Complete Guide For Beginners
+Ingredients:
+Query words: [chicken, rice]
+Recipe 'Instant Pot Basics: Complete Guide For Beginners' rejected: no query word found.
+Checking recipe: Introduction To Instant Pot Accessories
+Ingredients:
+Query words: [chicken, rice]
+Recipe 'Introduction To Instant Pot Accessories' rejected: no query word found.
+Checking recipe: Instant Pot Vocabulary For Beginners
+Ingredients:
+Query words: [chicken, rice]
+Recipe 'Instant Pot Vocabulary For Beginners' rejected: no query word found.
+Checking recipe: Instant Pot Initial Water Test Run
+Ingredients:
+Query words: [chicken, rice]
+Recipe 'Instant Pot Initial Water Test Run' rejected: no query word found.
+Checking recipe: Instant Pot Penne Alla Vodka
+Ingredients:
+ - ▢ 1 pound pasta
+ - ▢ 28 oz marinara sauce
+ - ▢ 1 tablespoon olive oil
+ - ▢ 1 small yellow onion diced
+ - ▢ 6 garlic cloves minced
+ - ▢ 1 teaspoon red pepper flakes optional
+ - ▢ ½ cup vodka
+ - ▢ 1 teaspoon kosher salt
+ - ▢ 2 cups water
+ - ▢ ½ cup heavy cream
+ - ▢ ¼ cup parmigiano reggiano grated
+ - ▢ ¼ cup Parsley chopped
+Query words: [chicken, rice]
+Recipe 'Instant Pot Penne Alla Vodka' rejected: no query word found.
+Checking recipe: How To Clean The Instant Pot
+Ingredients:
+Query words: [chicken, rice]
+Recipe 'How To Clean The Instant Pot' rejected: no query word found.
+Checking recipe: How To Prep & Store Fresh Cilantro
+Ingredients:
+ - fresh cilantro
+Query words: [chicken, rice]
+Recipe 'How To Prep & Store Fresh Cilantro' rejected: no query word found.
+Checking recipe: Instant Pot Dal Dhokli | Lentil stew with homemade noodles
+Ingredients:
+ - ▢ 4 tablespoon ghee divided (or 2 tablespoons of cooking oil for vegan option)
+ - ▢ ½ teaspoon mustard seeds
+ - ▢ ½ teaspoon cumin seeds
+ - ▢ ¼ teaspoon asafetida
+ - ▢ 12 fresh curry leaves
+ - ▢ ½ teaspoon ground turmeric
+ - ▢ 1 teaspoon ginger grated
+ - ▢ 3 teaspoon garlic grated
+ - ▢ 2 plum tomatoes diced
+ - ▢ 1 teaspoon red chili powder
+ - ▢ 2 tablespoon jaggery or brown sugar
+ - ▢ 1 tablespoon tamarind paste
+ - ▢ 2 teaspoon salt
+ - ▢ 2 tablespoon peanuts skip for nut allergy
+ - ▢ ½ cup toor daal rinsed and drained
+ - ▢ 2 cups water
+ - ▢ ½ cup cilantro chopped for garnish
+ - ▢ 2½ cups whole wheat flour divided
+ - ▢ 1 tablespoon besan chickpea flour
+ - ▢ 1 cup water or as needed
+ - ▢ 2 teaspoons kosher salt
+ - ▢ 1 teaspoon carom seeds
+ - ▢ ½ teaspoon red chili powder
+ - ▢ ¼ teaspoon ground turmeric
+ - ▢ 1 tablespoon oil divided
+Query words: [chicken, rice]
+Recipe 'Instant Pot Dal Dhokli | Lentil stew with homemade noodles' rejected: no query word found.
+Checking recipe: Chana Saag | Curried Chickpeas with Spinach
+Ingredients:
+ - ▢ 1 tablespoon ghee
+ - ▢ 1 yellow onion finely diced
+ - ▢ 1 teaspoon kosher salt or to taste
+ - ▢ 1 teaspoon ginger grated
+ - ▢ 2 garlic cloves minced
+ - ▢ 1 medium tomato diced
+ - ▢ ½ teaspoon ground turmeric
+ - ▢ 1 teaspoon kashmiri red chili powder or paprika
+ - ▢ 1 teaspoon ground cumin
+ - ▢ 1 can chickpeas rinsed and drained
+ - ▢ 4 cups fresh baby spinach rough chopped
+ - ▢ ½ teaspoon garam masala add more for spicier curry
+ - ▢ ½ teaspoon aamchoor powder or use 1 tablespoon lemon juice
+Query words: [chicken, rice]
+Recipe 'Chana Saag | Curried Chickpeas with Spinach' rejected: no query word found.
+Checking recipe: Tater Tots Chaat
+Ingredients:
+ - ▢ 1 15 oz can chickpeas rinsed and drained
+ - ▢ 2 cups frozen tater tots
+ - ▢ 2 cups plain yogurt
+ - ▢ 2 tablespoons sugar
+ - ▢ ½ teaspoon kosher salt
+ - ▢ ¼ cup green chutney
+ - ▢ ½ cup tamarind chutney
+ - ▢ ½ cup fine sev
+ - ▢ ¼ cup red onion finely diced
+ - ▢ 1 teaspoon kashmiri red chili powder sprinkle to taste
+ - ▢ 1 teaspoon cumin powder sprinkle to taste
+ - ▢ 1 teaspoon Chat masala sprinkle to taste
+ - ▢ ¼ cup cilantro chopped
+Query words: [chicken, rice]
+Recipe 'Tater Tots Chaat' rejected: no query word found.
+Checking recipe: Palak Paneer
+Ingredients:
+ - ▢ ½ pound Spinach
+ - ▢ 1 cup cubed paneer
+ - ▢ 1 to 2 green chilies
+ - ▢ ½ yellow onion finely diced
+ - ▢ 4 garlic
+ - ▢ ½ inch ginger
+ - ▢ 2 cloves
+ - ▢ 4 peppercorns
+ - ▢ 2 small pieces of cinnamon
+ - ▢ 1 tablespoon ghee
+ - ▢ 1 teaspoon kosher salt
+Query words: [chicken, rice]
+Recipe 'Palak Paneer' rejected: no query word found.
+Checking recipe: Homemade Paneer {Indian cottage cheese}
+Ingredients:
+ - ▢ ½ gallon whole milk **
+ - ▢ 3 tablespoons lemon juice **
+Query words: [chicken, rice]
+Recipe 'Homemade Paneer {Indian cottage cheese}' rejected: no query word found.
+Checking recipe: Phyllo Dough Crinkle Cake with eggless option
+Ingredients:
+ - ▢ 1 box phyllo dough
+ - ▢ 2 sticks butter melted
+ - ▢ 1 cup milk
+ - ▢ ¾ cup sugar
+ - ▢ 1 teaspoon rose essence
+ - ▢ 1 teaspoon ground cardamom
+ - ▢ 2 eggs **
+ - ▢ 1 cup sugar
+ - ▢ ½ cup water
+ - ▢ ½ teaspoon rose essence **
+ - ▢ ½ cup chopped pistachios
+ - ▢ 1 tablespoon rose petals
+Query words: [chicken, rice]
+Recipe 'Phyllo Dough Crinkle Cake with eggless option' rejected: no query word found.
+Checking recipe: Peanut Thecha | Kharda
+Ingredients:
+ - ▢ ½ cup peanuts raw, unsalted
+ - ▢ 4 green chilies
+ - ▢ 8 garlic cloves
+ - ▢ 2 teaspoons oil
+ - ▢ 1 teaspoon kosher salt
+Query words: [chicken, rice]
+Recipe 'Peanut Thecha | Kharda' rejected: no query word found.
+Checking recipe: Palak Paneer Paratha
+Ingredients:
+ - ▢ 5 oz baby spinach **
+ - ▢ 6 oz paneer
+ - ▢ 1 tablespoon ginger paste
+ - ▢ 2 teaspoons green chili minced
+ - ▢ 1 teaspoon ground cumin
+ - ▢ 2 teaspoons ground coriander
+ - ▢ 1 teaspoon garam masala
+ - ▢ 1 teaspoon amchur powder
+ - ▢ 2 teaspoons kosher salt
+ - ▢ 1 tablespoon kasoori methi (dried fenugreek leaves) optional
+ - ▢ 2 cups whole wheat flour
+ - ▢ 1 teaspoon kosher salt
+ - ▢ 1 cup water
+ - ▢ 1 tablespoon oil
+ - ▢ ½ cup whole wheat flour for rolling
+ - ▢ 2 tablespoons oil or ghee
+Query words: [chicken, rice]
+Recipe 'Palak Paneer Paratha' rejected: no query word found.
+Checking recipe: Kale Potato Parathas
+Ingredients:
+ - ▢ 2 cups whole wheat flour for dough
+ - ▢ ½ cup whole wheat flour for rolling parathas
+ - ▢ 3 cups kale
+ - ▢ 1 medium russet potato
+ - ▢ 1 tablespoon garlic pressed
+ - ▢ 1 tablespoon green chilies minced
+ - ▢ ¼ teaspoon ground turmeric
+ - ▢ 1 teaspoon brown sesame seeds
+ - ▢ 1 teaspoon ajwain carom seeds
+ - ▢ 2 teaspoons kosher salt
+ - ▢ 2 tablespoons oil
+ - ▢ 2 tablespoons ghee
+Query words: [chicken, rice]
+Recipe 'Kale Potato Parathas' rejected: no query word found.
+Checking recipe: Crispy Namak Pare
+Ingredients:
+ - ▢ 2 cups whole wheat flour 8 oz or 228 grams
+ - ▢ 2 teaspoons kosher salt
+ - ▢ 2 tablespoons oil hot
+ - ▢ 1 teaspoon cumin seeds
+ - ▢ 1 teaspoon carom seeds
+ - ▢ ¼ teaspoon ground turmeric
+ - ▢ 1 teaspoon kashmiri red chili powder
+ - ▢ ⅔ cup water
+ - ▢ oil
+Query words: [chicken, rice]
+Recipe 'Crispy Namak Pare' rejected: no query word found.
+Checking recipe: Masala Fries - Easy Air Fryer Recipe
+Ingredients:
+ - ▢ 2 medium russet potatoes
+ - ▢ 4 cups water for soaking
+ - ▢ 2 tablespoons oil
+ - ▢ 1 teaspoon garlic powder
+ - ▢ 1 teaspoon kosher salt
+ - ▢ 1 teaspoon kashmiri red chili powder
+ - ▢ ¼ teaspoon ground turmeric
+ - ▢ ¼ teaspoon garam masala
+ - ▢ ¼ teaspoon chat masala optional
+Query words: [chicken, rice]
+Recipe 'Masala Fries - Easy Air Fryer Recipe' rejected: no query word found.
+Checking recipe: Egg Bhurji | Indian scrambled eggs
+Ingredients:
+ - ▢ 6 eggs
+ - ▢ ¼ cup milk or water
+ - ▢ 1 tablespoon oil
+ - ▢ 1 large yellow onion finely diced
+ - ▢ 1½ teaspoons kosher salt
+ - ▢ 2 teaspoons ginger grated
+ - ▢ 2 teaspoons garlic minced
+ - ▢ ¼ teaspoon ground turmeric
+ - ▢ 2 teaspoons Indian green chilies minced **
+ - ▢ 1 tomato diced
+ - ▢ 3 scallions
+ - ▢ 1 teaspoon garam masala
+ - ▢ ½ cup cilantro finely chopped
+ - ▢ 1 tablespoon ghee
+ - ▢ 4 bread slices
+Query words: [chicken, rice]
+Recipe 'Egg Bhurji | Indian scrambled eggs' rejected: no query word found.
+Checking recipe: Masala Mac and Cheese
+Ingredients:
+ - ▢ 2 tablespoons olive oil
+ - ▢ 1 medium yellow onion finely diced
+ - ▢ 1 cup red pepper diced
+ - ▢ 1 to 2 jalapeños finely diced
+ - ▢ 1 tablespoon ginger paste
+ - ▢ 1 tablespoon garlic paste
+ - ▢ 1 teaspoon Kashmiri red chili powder or any mild chili powder, add less if using a spicier variety
+ - ▢ 1 teaspoon garam masala
+ - ▢ 1 teaspoon ground cumin
+ - ▢ 1 teaspoon kosher salt
+ - ▢ 16 oz elbow macaroni
+ - ▢ 4 cups low sodium vegetable broth I use 4 teaspoons of Better than Bouillion vegetable broth paste mixed in 4 cups of water
+ - ▢ 1 cup 2% milk or whole milk
+ - ▢ 2 cups cheddar cheese grated
+ - ▢ 1 cup pepper jack cheese grated
+ - ▢ 1 teaspoon red chili flakes optional
+ - ▢ ¼ cup cilantro chopped
+Query words: [chicken, rice]
+Recipe 'Masala Mac and Cheese' rejected: no query word found.
+Checking recipe: Instant Pot Sweet Potato Casserole
+Ingredients:
+ - ▢ 3 tablespoons butter divided (vegan butter or coconut oil)
+ - ▢ 2 pounds sweet potatoes peeled and sliced
+ - ▢ ½ cup orange juice
+ - ▢ ¼ cup brown sugar plus 2 tablespoon
+ - ▢ ½ teaspoon salt
+ - ▢ ½ teaspoon ground cinnamon
+ - ▢ ⅛ teaspoon ground allspice
+ - ▢ ⅛ teaspoon ground nutmeg
+ - ▢ 20 pecan halves
+Query words: [chicken, rice]
+Recipe 'Instant Pot Sweet Potato Casserole' rejected: no query word found.
+Checking recipe: Instant Pot Sweet Coconut Rice | Narali Bhath
+Ingredients:
+ - ▢ 1 cup basmati rice
+ - ▢ 1 teaspoon saffron
+ - ▢ 1 tablespoon warm milk
+ - ▢ 2 tablespoons ghee divided
+ - ▢ 20 whole cashews
+ - ▢ 2 whole green cardamom pods
+ - ▢ 6 cloves
+ - ▢ 1½ cups water
+ - ▢ ½ teaspoon kosher salt
+ - ▢ 1 cup fresh coconut grated (frozen works well)
+ - ▢ ¾ cup sugar
+ - ▢ 2 tablespoons raisins
+ - ▢ 1 teaspoon cardamom powder
+Query words: [chicken, rice]
+->MinistryOfCurryScraper gave 6 recipes
+Total Recipes colelcted 6
+]]></system-out>
+  </testcase>
+</testsuite>
